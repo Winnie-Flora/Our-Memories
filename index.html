@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery with Music</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Image Gallery with Music</h1>
+    
+    <div class="music-player">
+      <h2>Background Music</h2>
+      <input type="file" id="music-upload" accept="audio/*" class="file-input">
+      <div id="music-controls">
+        <audio id="audio-player" controls></audio>
+      </div>
+    </div>
+
+    <div class="gallery-container">
+      <div class="upload-section">
+        <h2>Add Images to Gallery</h2>
+        <input type="file" id="image-upload" accept="image/*" multiple class="file-input">
+      </div>
+      
+      <div class="gallery-display">
+        <div class="gallery-navigation">
+          <button id="prev-btn" class="nav-btn">Previous</button>
+          <button id="slideshow-btn" class="nav-btn">Start Slideshow</button>
+          <button id="next-btn" class="nav-btn">Next</button>
+        </div>
+        
+        <div class="image-container">
+          <div id="image-display">
+            <p class="no-images">No images added yet. Upload some images to get started!</p>
+          </div>
+        </div>
+        
+        <div class="thumbnails-container" id="thumbnails">
+          <!-- Thumbnails will be added here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
